@@ -1,0 +1,70 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #494949FF;
+}
+#neon{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+	margin: auto;
+	top: 200px;
+	height: 300px;
+	width: 700px;
+	border: 5px solid aqua;
+	box-shadow: 1px 1px 20px black;
+	border-radius: 10px;
+	padding-top: 20px;
+}
+#images{
+	display: flex;
+	position: absolute;
+	padding-bottom: 10px;
+	margin-bottom: 50px;
+	bottom: 0px;
+}
+.img{
+	margin: 0 50px;
+}
+#img1,#img2,#img3,#img4{
+	padding: 10px;
+}
+#img1{
+	background-color: dodgerblue;
+	border-radius: 10px;
+	box-shadow: 1px 1px 10px blue,0px 0px 20px blue;
+}
+#img2{
+	background-color: deeppink;
+	border-radius: 10px;
+	box-shadow: 1px 1px 10px pink,0px 0px 20px pink;
+}
+#img3{
+	background-color: lightgreen;
+	border-radius: 10px;
+	box-shadow: 1px 1px 10px greenyellow,0px 0px 20px greenyellow;
+}
+#img4{
+	background-color: coral;
+	border-radius: 10px;
+	box-shadow: 1px 1px 10px orange,0px 0px 20px orange;
+}
+.neonhead{
+	position: relative;
+	font-size: 60px;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-shadow: 4px 2px 10px aquamarine,0px 0px 20px aquamarine;
+	animation-name: colour;
+	animation-delay: 1s;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	cursor: pointer;
+}
+@keyframes colour{
+	0%{filter: hue-rotate(0deg);}
+	100%{filter: hue-rotate(360deg);}
+}
